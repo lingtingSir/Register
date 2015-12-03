@@ -7,12 +7,24 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RegisterViewController.h"
+#import "LoginViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+//    UINavigationController *nav = [[UINavigationController  alloc] init];
+//    RegisterViewController *regis = [[RegisterViewController alloc] init];
+//    RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
+    LoginViewController *login = [[LoginViewController alloc] init];
+    self.window.rootViewController = login;
+
+    self.window.rootViewController = login;
+//    [nav pushViewController:regis animated:YES];
+    
     return YES;
 }
 							
