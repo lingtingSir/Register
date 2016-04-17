@@ -46,6 +46,8 @@
  */
 - (void)createNavigation
 {
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     _navBar = [[NavigationController alloc] initWithFrame:CGRectMake(0.f, 0.f, 320.f,64.f)
                                               bgImageName:@"backgroundNavbar_ios7"
                                                labelTitle:@"登陆"
@@ -57,29 +59,22 @@
                                             rightBtnFrame:CGRectMake(256.f,15.f, 50, 50)
                                         rightBtnImageName:@"user_register.png"];
     _navBar.delegate = self;
-
+//    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:_navBar];
+//    self.navigationItem.titleView = _navBar;
+    
     [self.view addSubview:_navBar];
     
 }
 
 - (void)createTableview
 {
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.f, (FSystenVersion >= 7.0)?64.f:44.f, 320.f, (FSystenVersion >=7.0)?(ISIPHONE5?(568.f - 64.f):(480.f - 64.f)):(ISIPHONE5?(548.f - 44.f):(460.f - 44.f))) style:UITableViewStyleGrouped];
+
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64)style:UITableViewStyleGrouped];
     _tableView.allowsSelection = NO;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [_tableView setBackgroundColor:[Common translateHexStringToColor:@"#f0f0f0"]];
     [self.view addSubview:_tableView];
-    //    self.tableView=({
-    //        UITableView *tableView=[[UITableView alloc] initWithFrame:CGRectMake(0,0,self.view.bounds.size.width,self.tableViewHeith) style:UITableViewStylePlain];
-    //        tableView.delegate=self;
-    //        tableView.dataSource=self;
-    //        tableView.allowsSelection = NO;
-    //        tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
-    //        [tableView setBackgroundColor:[Common translateHexStringToColor:@"#f0f0f0"]];
-    //        [self.view addSubview:tableView];
-    //        tableView;
-    //    });
 }
 #pragma mark - TopNavBarDelegate Method
 /**

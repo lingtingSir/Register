@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE38C5401C0FE5B6000B3DB8 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = AE38C53F1C0FE5B6000B3DB8 /* test.m */; };
 		AE59CB1C1BC156A30076FDC5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE59CB1B1BC156A30076FDC5 /* LoginViewController.m */; };
 		AE59CB201BC15A260076FDC5 /* user_password@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE59CB1E1BC15A260076FDC5 /* user_password@2x.png */; };
 		AE59CB211BC15A260076FDC5 /* user_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE59CB1F1BC15A260076FDC5 /* user_user@2x.png */; };
 		AE59CB231BC15A610076FDC5 /* user_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE59CB221BC15A610076FDC5 /* user_btn@2x.png */; };
-		AE92716D1C0FE8EC004506FB /* dddd.m in Sources */ = {isa = PBXBuildFile; fileRef = AE92716C1C0FE8EC004506FB /* dddd.m */; };
 		AEA44B661BC1808A002DB0DF /* user_register.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA44B651BC1808A002DB0DF /* user_register.png */; };
 		AEFB78531BC0D5A10014B81E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFB78521BC0D5A10014B81E /* Foundation.framework */; };
 		AEFB78551BC0D5A10014B81E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFB78541BC0D5A10014B81E /* CoreGraphics.framework */; };
@@ -87,15 +85,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE38C53E1C0FE5B6000B3DB8 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		AE38C53F1C0FE5B6000B3DB8 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		AE59CB1A1BC156A30076FDC5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		AE59CB1B1BC156A30076FDC5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		AE59CB1E1BC15A260076FDC5 /* user_password@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_password@2x.png"; sourceTree = "<group>"; };
 		AE59CB1F1BC15A260076FDC5 /* user_user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_user@2x.png"; sourceTree = "<group>"; };
 		AE59CB221BC15A610076FDC5 /* user_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_btn@2x.png"; sourceTree = "<group>"; };
-		AE92716B1C0FE8EC004506FB /* dddd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dddd.h; sourceTree = "<group>"; };
-		AE92716C1C0FE8EC004506FB /* dddd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dddd.m; sourceTree = "<group>"; };
 		AEA44B651BC1808A002DB0DF /* user_register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_register.png; sourceTree = "<group>"; };
 		AEFB784F1BC0D5A10014B81E /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFB78521BC0D5A10014B81E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -207,8 +201,6 @@
 		AEFB78461BC0D5A10014B81E = {
 			isa = PBXGroup;
 			children = (
-				AE92716B1C0FE8EC004506FB /* dddd.h */,
-				AE92716C1C0FE8EC004506FB /* dddd.m */,
 				AEFB78581BC0D5A10014B81E /* Register */,
 				AEFB78771BC0D5A20014B81E /* RegisterTests */,
 				AEFB78511BC0D5A10014B81E /* Frameworks */,
@@ -245,8 +237,6 @@
 				AEFB78641BC0D5A10014B81E /* Main.storyboard */,
 				AEFB786A1BC0D5A10014B81E /* Images.xcassets */,
 				AEFB78591BC0D5A10014B81E /* Supporting Files */,
-				AE38C53E1C0FE5B6000B3DB8 /* test.h */,
-				AE38C53F1C0FE5B6000B3DB8 /* test.m */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -566,9 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE92716D1C0FE8EC004506FB /* dddd.m in Sources */,
 				AE59CB1C1BC156A30076FDC5 /* LoginViewController.m in Sources */,
-				AE38C5401C0FE5B6000B3DB8 /* test.m in Sources */,
 				AEFB790C1BC0D9910014B81E /* Common.m in Sources */,
 				AEFB78AD1BC0D70C0014B81E /* main.m in Sources */,
 				AEFB790F1BC0EF1D0014B81E /* NavigationController.m in Sources */,
@@ -704,7 +692,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Register/Register-Prefix.pch";
 				INFOPLIST_FILE = "Register/Register-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -718,7 +706,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Register/Register-Prefix.pch";
 				INFOPLIST_FILE = "Register/Register-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

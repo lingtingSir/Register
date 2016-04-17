@@ -17,19 +17,6 @@
 
 @implementation NavigationController
 
-@synthesize backgroundImageViewFrame = _backgroundImageViewFrame;
-@synthesize backgroundImageName      = _backgroundImageName;
-
-@synthesize labelTitleStr            = _labelTitleStr;
-@synthesize labelFrm                 = _labelFrm;
-
-@synthesize haveLftBtn               = _haveLftBtn;
-@synthesize lftBtnFrm                = _lftBtnFrm;
-@synthesize lftBtnImgName            = _lftBtnImgName;
-
-@synthesize haveRhtBtn               = _haveRhtBtn;
-@synthesize rhtBtnFrm                = _rhtBtnFrm;
-@synthesize rhtBtnImgName            = _rhtBtnImgName;
 
 - (id)initWithFrame:(CGRect)frame bgImageName:(NSString *)bgimgName labelTitle:(NSString *)title labFrame:(CGRect)labelFrame leftBool:(BOOL)haveLeftBtn leftBtnFrame:(CGRect)leftBtnFrm leftBtnImageName:(NSString *)LeftBtnImgName rightBool:(BOOL)haveRightBtn rightBtnFrame:(CGRect)rightBtnFrm rightBtnImageName:(NSString *)rightBtnImgName
 {
